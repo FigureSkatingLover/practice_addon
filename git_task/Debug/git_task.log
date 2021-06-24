@@ -1,0 +1,3 @@
+﻿  git_task.cpp
+C:\Users\Виктория\Desktop\git_task\git_task\git_task.cpp(13,20): warning C4018: <: несоответствие типов со знаком и без знака
+  git_task.vcxproj -> C:\Users\Виктория\Desktop\git_task\Debug\git_task.exe
