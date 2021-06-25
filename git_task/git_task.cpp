@@ -17,6 +17,17 @@ int main() {
 	}
 	vector<char> alphabet;
 	alphabet = v;
+
+	for (int a = 0; a < alphabet.size(); a++) {
+		char c = alphabet[a];
+		int posc = a+1;
+		for (int b = posc; b < alphabet.size(); b++) {
+			if (alphabet[b] == c) {
+				alphabet.erase(alphabet.begin() + b);
+			}
+		}
+	}
+
 	sort(alphabet.begin(), alphabet.end()); //буквы слова в порядке 
 	bool flag = 0;
 	int i = 0;
