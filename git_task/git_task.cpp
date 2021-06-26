@@ -6,14 +6,7 @@
 #include <fstream>
 
 using namespace std;
-
-int main() {
-	string str;
-
-	ifstream fromfile("file.txt");
-	fromfile >> str;
- 
-	//cin >> str;
+string anagram(string str) {
 	int len = str.length();
 	//алгоритм Нарайяны (поиск следующей лексикографической последовательности)
 	for (int i = len - 1; i > 0; i--) { //поиск наибольшего индекса
@@ -29,6 +22,16 @@ int main() {
 			break;
 		}
 	}
-	cout << str;
+	return str;
+}
+
+int main() {
+	string str;
+
+	/*ifstream fromfile("file.txt");
+	fromfile >> str;*/
+ 
+	cin >> str;
+	cout << anagram(str);
 	return 0;
 }
