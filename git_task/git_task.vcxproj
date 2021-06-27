@@ -153,6 +153,9 @@
   <ItemGroup>
     <ClCompile Include="git_task.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="git_task.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
