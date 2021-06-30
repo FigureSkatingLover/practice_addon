@@ -86,8 +86,8 @@ bool test7() // граничное
 }
 bool test8() // граничное
 {
-	string str = "dcba";
-	string result = "dcba";
+	string str = "aaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccccccc";
+	string result = "aaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccccccc";
 	str = anagram(str);
 	if (str.compare(result))
 		return true;
