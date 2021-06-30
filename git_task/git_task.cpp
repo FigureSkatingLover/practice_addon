@@ -1,4 +1,4 @@
-﻿#include "git_task.cpp"
+﻿#include "git_task.h"
 
 using namespace std;
 
@@ -87,7 +87,7 @@ bool test7() // граничное
 bool test8() // граничное
 {
 	string str = "aaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccccccc";
-	string result = "aaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbcccccccccccccccccccccccccc";
+	string result = "aaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbcbccccccccccccccccccccccccc";
 	str = anagram(str);
 	if (str.compare(result))
 		return true;
